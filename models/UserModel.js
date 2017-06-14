@@ -30,7 +30,7 @@ var UserSchema = new Schema({
 UserSchema.pre('save', function(next) {
     var user = this;
 
-    // only hash the phone if it has been modified (or is new)
+    // only encrypt the phone if it has been modified (or is new)
     if (!user.isModified('phone')) return next();
 
     user.phone= cryptr.encrypt(user.phone);
