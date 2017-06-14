@@ -4,11 +4,11 @@ Back End Developer Job Interview at MYJAR written with Node JS
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Prerequisites
 Things you need to install the software.
-```
-1. You have an environment set up (i.e Node Js and MongoDB is installed).
-2. Kindly run npm -v and mongo --version as these will show you the version of NPM and MongoDB installed on your machine.
-3. If you don’t have it installed, kindly go through this [Sites Using React](https://github.com/facebook/react/wiki/Sites-Using-React) on how to install it in order for you to create a server in Node and Mongodb.
-```
+
+* You need to have an environment set up (i.e Node Js and MongoDB is installed).
+* Kindly run `npm -v` and `mongo --version` as these will show you the version of NPM and MongoDB installed on your machine.
+* If you don’t have it installed, kindly go through this [link](https://nodejs.org/en/download/package-manager/) on how to install it in order for you to create a server in Node and [Mongodb](https://docs.mongodb.com/manual/installation/).
+
 ### Installing
 Provided, all steps above are done, run the following command in the terminal
 ```
@@ -16,14 +16,14 @@ Provided, all steps above are done, run the following command in the terminal
 * npm run start
 ``` 
 
-You should see the following on your terminal, after npm run start:
+You should see the following on your terminal, after `npm run` start:
 ```
 MYJAR Test RESTful API server started on:3000
 ```
 
-Finally, open a new terminal and run mongod t0 start Mongo DB.
+Finally, open a new terminal and run mongod to start Mongo DB.
 
-Set Up Completed Succefully, now you can test the API endpoints in Postman.
+Set Up Completed Succefully, now you can test the API endpoints in Postman, like this `http://localhost:3000/api/users`.
 
 ### API Endpoints.
 
