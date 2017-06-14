@@ -12,7 +12,10 @@ Things you need to install the software.
 ### Installing
 Provided, all steps above are done, run the following command in the terminal
 ```
+* git clone https://github.com/tholou/myjartestapi.git
+* cd myjartestapi
 * npm install
+* open a new terminal and run mongod to start Mongo DB
 * npm run start
 ``` 
 
@@ -20,8 +23,6 @@ You should see the following on your terminal, after `npm run` start:
 ```
 MYJAR Test RESTful API server started on:3000
 ```
-
-Finally, open a new terminal and run mongod to start Mongo DB.
 
 Set Up Completed Succefully, now you can test the API endpoints in Postman, like this `http://localhost:3000/api/users`.
 
