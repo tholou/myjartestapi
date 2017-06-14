@@ -1,0 +1,27 @@
+{
+  "name": "myjartestapi",
+  "version": "1.0.0",
+  "description": "MYJAR Test API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "MYJAR Test"
+  ],
+  "author": "Toluwalade Eyinade",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
