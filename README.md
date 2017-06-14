@@ -19,7 +19,7 @@ Provided, all steps above are done, run the following command in the terminal
 * npm run start
 ``` 
 
-You should see the following on your terminal, after `npm run` start:
+You should see the following on your terminal, after `npm run start`:
 ```
 MYJAR Test RESTful API server started on:3000
 ```
