@@ -23,10 +23,9 @@
   },
   "dependencies": {
     "body-parser": "^1.17.2",
+    "cryptr": "^2.0.0",
     "express": "^4.15.3",
-    "express-validation": "^1.0.2",
-    "joi": "^7.3.0",
-    "joi-phone": "0.0.1",
+    "express-validator": "^3.2.0",
     "mongoose": "^4.10.6"
   }
 }

@@ -5,16 +5,21 @@
 'use strict';
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-
+var Cryptr = require('cryptr'),
+    cryptr = new Cryptr('myTotalySecretKey');
 
 var UserSchema = new Schema({
     email: {
         type: String,
-        Required: 'Kindly enter your email'
+        required: true,
+        unique: true
     },
     phone: {
         type: String,
-        Required: 'Kindly enter your phone'
+        required: true
+    },
+    others: {
+        type: Array
     },
     Created_date: {
         type: Date,
@@ -22,4 +27,14 @@ var UserSchema = new Schema({
     }
 });
 
+UserSchema.pre('save', function(next) {
+    var user = this;
+
+    // only hash the phone if it has been modified (or is new)
+    if (!user.isModified('phone')) return next();
+
+    user.phone= cryptr.encrypt(user.phone);
+    next();
+
+});
 module.exports = mongoose.model('Users', UserSchema);
