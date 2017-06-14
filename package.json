@@ -22,6 +22,11 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-validation": "^1.0.2",
+    "joi": "^7.3.0",
+    "joi-phone": "0.0.1",
+    "mongoose": "^4.10.6"
   }
 }
